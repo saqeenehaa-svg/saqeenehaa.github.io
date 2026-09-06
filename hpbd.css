@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#kado {
+    /* display: none; */
+}
+
+.cake {
+    order: 2;
+    display: none;
+}
+
+.song {
+    order: 3;
+    display: none;
+}
+
+.kata {
+    order: 1;
+    display: none;
+}
+
+text {
+    font-size: 18px;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    fill: #16587B;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#roti {
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+
+@keyframes bounce {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#hpbd { 
+    animation: bounce 2s ease-in-out forwards;
+}
+
+.garis {
+    animation: bounce 2s ease-in-out forwards;
+}
+
+#line {
+    display: none;
+}
+
+#gambar {
+    display: none;
+}
+
+.gallery {
+    gap: 10px;
+    animation: turun 20s linear infinite normal;
+}
+
+.gallery img {
+    border-radius: 10px;
+}
+
+.dua,
+.empat {
+    margin-top: 20px;
+}
+
+@keyframes turun {
+    from {
+        opacity: 1;
+        transform: translate(0, -30vh);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, calc(100vh - 50px));
+    }
+}

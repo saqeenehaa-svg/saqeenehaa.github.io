@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #336876;
+    height: 100%;
+}
+
+.surat {
+    margin: 50% auto;
+    margin-bottom: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.surat img {
+    width: 150px;
+    height: 150px;
+}
+
+.gambar {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    gap: 100px 80px;
+    justify-content: space-between;
+    display: none;
+}
+
+.gambar img {
+    opacity: 0;
+}
+
+@keyframes foto {
+    0% {
+        opacity: 0;
+       translate: 0 -100vh; 
+    }
+    50% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+        translate: 0 100vh;
+    }
+    100% {
+        opacity: 0;
+        translate: 0 -100vh;
+    }
+}
+
+.foto {
+    width: 50px;
+    height: 50px;
+    animation: foto 30s linear infinite;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.a { animation-delay: 0.1s; };
+.b { animation-delay: 0.10s; };
+.c { animation-delay: 0.52s; };
+.d { animation-delay: 0.75s; };
+.e { animation-delay: 0.46s; };
+.f { animation-delay: 0.89s; };
+.g { animation-delay: 0.30s; };
+.h { animation-delay: 0.60s; };
+
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.zoom {
+    animation: zoomIn 3s ease-in forwards;
+}
