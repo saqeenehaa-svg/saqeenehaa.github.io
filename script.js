@@ -14,9 +14,10 @@ const gallery = document.querySelector('.gallery');
 icon.addEventListener('click', function() {
     container.style.display = 'flex'
     container.style.flexDirection = 'column';
-    container.style.justifyContent = 'space-between';
+    container.style.justifyContent = 'flex-start';
     container.style.alignItems = 'center';
     container.style.height = '100vh';
+    container.style.minHeight = '100vh';
     container.style.width = '100%';
     container.style.maxWidth = '360px';
     container.style.margin = '0 auto';
@@ -32,11 +33,12 @@ icon.addEventListener('click', function() {
 
     kata.style.height = '90px';
     kata.style.width = '100%'
-    kata.style.marginBottom = '-15px';
+    kata.style.marginBottom = '50px';
     kata.style.marginTop = '200px';
 
     cake.style.height = '150px';
     cake.style.width = 'auto';
+    cake.style.marginBottom = '50px';
     
     document.body.style.backgroundColor = '#F5EEDD';
 });
