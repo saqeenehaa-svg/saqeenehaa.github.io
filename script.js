@@ -43,7 +43,6 @@ icon.addEventListener('click', function() {
     document.body.style.backgroundColor = '#F5EEDD';
 });
 
-
 song.addEventListener('play', function() {
     line.style.display = 'block';
     line.style.position = 'absolute';
@@ -56,4 +55,14 @@ song.addEventListener('play', function() {
     
     gallery.style.display = 'inherit';
     gallery.style.zIndex = '9999';
+    gallery.classList.remove('animasi-berhenti');
 });
+
+song.addEventListener('pause', function() {
+    gallery.classList.add('animasi-berhenti');
+})
+
+song.addEventListener('loadmetadata', function() {
+    const durasiLagu = lagu.duration;
+    gallery.style.animationDuration = `${durasiLagu}s`;
+})

@@ -83,6 +83,7 @@ text {
 .gallery {
     gap: 10px;
     animation: turun 20s linear infinite normal;
+    animation-play-state: running
 }
 
 .gallery img {
@@ -105,3 +106,8 @@ text {
         transform: translate(0, calc(100vh - 50px));
     }
 }
+
+.animasi-berhenti {
+    animation-play-state: paused;
+}
+
