@@ -19,7 +19,7 @@ icon.addEventListener('click', function() {
     container.style.height = '100vh';
     container.style.minHeight = '100vh';
     container.style.width = '100%';
-    container.style.maxWidth = '500px';
+    container.style.maxWidth = '400px';
     container.style.margin = '0 auto';
     container.style.padding = '10px 15px 30px 15px';
     container.style.boxSizing = 'border-box';
